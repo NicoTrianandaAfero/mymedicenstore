@@ -1,0 +1,11 @@
+UPDATE PAGING with AJAX
+
+- Tabel pada index.php ditambahkan ID "tblMovie"
+- Klik pada CLASS "page" ditambahkan ajax $.post untuk mengirimkan data ke ajax_page.php
+- Data yang dihasilkan ajax_page.php dimasukkan ke tabel "tblMovie"
+
+
+
+TANTANGAN LENGKAP lebih lanjut
+
+AJAX pada pergantian keyword Judul dan pilihan perpage

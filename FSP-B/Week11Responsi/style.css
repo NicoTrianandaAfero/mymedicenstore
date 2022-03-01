@@ -1,0 +1,16 @@
+.kotak-kuning {padding: 5px; min-height: 200px;  }
+.gambar-container {float: left; width: 200px;}
+.gambarku {max-width: 100%;}
+.isi-artikel {padding: left: 220px;  }
+ 
+@media (min-width: 600px) {
+ 
+	#menu div {
+		float: left;
+		width: 31%;
+		margin: 0px 1%;
+		background-color: yellow;
+	}
+}
+
+ 

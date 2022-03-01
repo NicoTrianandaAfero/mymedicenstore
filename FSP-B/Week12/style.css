@@ -1,0 +1,91 @@
+.container {
+	background-color: lightgreen;
+	padding: 1em;
+
+	display: flex;
+	flex-wrap: wrap; 
+	/*justify-content: center;
+	align-items: center;*/
+}
+
+.card {
+	flex-basis: 47%;
+	flex-grow: 1;
+
+	background-color: grey;
+	min-height: 50px;
+	margin: 0.25em;
+}
+
+.card2 {
+	background-color: red;
+}
+
+.card:nth-child(5) {
+	background-color: blue;
+}
+
+.lat1 ul {
+	background-color: lightgreen;
+	list-style-type: none;
+	height: 50px;
+
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+.lat1 li {
+	border: 1px solid black;
+	flex-basis: 75px;
+	text-align: center;
+}
+
+/* Latihan Flex 2*/
+main article {
+	background-color: yellow;
+	min-height: 50px;
+}
+
+main aside {
+	background-color: lightgrey;
+	min-height: 50px;
+}
+
+@media (min-width: 600px) {
+	main {
+		display: flex;
+	}
+	main article {
+		flex-grow: 2;
+		order: 2;
+	}
+	main aside:nth-child(2) {
+		flex-grow: 1;
+		order: 1;
+	}
+	main aside:nth-child(3) {
+		flex-grow: 1;
+		order: 3;
+	}
+}
+
+.lat3 {
+	display: flex;
+}
+
+.item {
+	flex-basis: 100%;
+	border: 1px solid black;
+}
+
+.lat3 ul {
+	height: 300px;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+}
+
+.lat3 li {
+	background-color: magenta;
+}

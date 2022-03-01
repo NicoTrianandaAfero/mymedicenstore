@@ -1,0 +1,51 @@
+*{
+	font-family: 'bahnschrift',cursive;
+}
+body{
+	margin: 0;
+}
+.container{
+	display: grid;
+	min-height: 100vh;
+	grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+	grid-template-rows: 1fr 1fr 1fr 1fr 1fr;
+	grid-template-areas: 	"area-header area-header area-header area-header area-header"
+							"area-side1 area-content area-content area-content area-side2"
+							"area-side1 area-content area-content area-content area-side2"
+							"area-side1 area-content area-content area-content area-side2"
+							"area-footer area-footer area-footer area-footer area-footer";
+	text-align: center;
+	justify-content: center;
+}
+
+.head{
+	grid-area: area-header;
+	background-color: green;
+}
+.side1{
+	grid-area: area-side1;
+	background-color: lightblue;
+}
+.side2{
+	grid-area: area-side2;
+	background-color: lightblue;
+}
+table{
+	grid-area: area-content;
+	background-color: lightgreen;
+	border: 2px solid black;
+	padding: 5px;
+}
+td{
+	border: 1px solid black;
+}
+.foot{
+	grid-area: area-footer;
+	background-color: lightsteelblue;
+}
+.player1{
+	background-image: url(/img/circle.png);
+}
+.player2{
+	background-image: url(/img/cross.png);
+}
